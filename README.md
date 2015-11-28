@@ -109,6 +109,19 @@ import ParseCCMixin from 'react-cloud-code-mixin'
 ## Depencies
 None! Well, except Parse. But that's a given.
 
+## F.A.Q.
+**Does this replace ParseReact Mixin?**
+
+It can, but it doesn't have to. This project started when my company switched from doing Parse queries client-side to making API calls in order to reduce client-side logic and network usage. We use this in our app now instead of ParseReact, but the two can operate side by side (as long as you don't name two data params the same).
+
+**Is this production ready?**
+
+Like with most open-source software, I can't make any guarantees, but I can tell you it's stable enough that the company I work at is using actively it in production.
+
+**How can I contribute?**
+
+Feel free to fork this project and create a pull request! I'll merge in anything useful. Thanks!
+
 ## License
 
 MIT
