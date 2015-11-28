@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-cloud-code-mixin.svg)](https://badge.fury.io/js/react-cloud-code-mixin)
 
-Mixin for React components to easily listen for changes and re-render from Parse Cloud Code function calls. The format here is very heavily inspired from Parse-React's Mixin.
+Mixin for React components to easily listen for changes and re-render from Parse Cloud Code function calls. The format here is very heavily inspired from [ParseReact's Mixin](https://github.com/ParsePlatform/ParseReact/blob/master/docs/api/Mixin.md).
 
 
 ## How to Use
