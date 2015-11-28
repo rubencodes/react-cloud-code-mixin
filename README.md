@@ -79,6 +79,16 @@ var MyComponent = React.createClass({
 
 *Array and Object values not yet supported.
 
+## Additional Component Methods
+###`this.pendingQueries()` 
+Returns an array containing the names of queries that are currently waiting for results.
+###`this.queryErrors()` 
+Returns a map of query names to the error they encountered on the last request, if there was one.
+###`this.reloadData()` 
+Forces a full refresh of all cloud code calls. 
+
+**Coming Soon**: Will optionally take an array of function names as a param and reload only those functions.
+
 ## Install
 
 ```
