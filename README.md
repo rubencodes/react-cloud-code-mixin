@@ -47,8 +47,8 @@ The objects associated with the data keys can take the following parameters:
 
 - `name`: the name of the Parse Cloud Code function you wish to run.
 - `params`: the parameters passed to the cloud code function.
-- `propDeps`: an array with the names of each `prop` whose value change should cause a reload.
-- `stateDeps`: an array with the names of each `state` whose value change should cause a reload.
+- `propDeps`: an array with the names of each `prop` whose value change should cause a reload (e.g. the component will only pull data and re-render if one of these changed).*
+- `stateDeps`: an array with the names of each `state` whose value change should cause a reload (e.g. the component will only pull data and re-render if one of these changed).*
 - `defaultValue`: the default value assigned to the data key on mount.
 
 Example:
@@ -62,7 +62,8 @@ var MyComponent = React.createClass({
         params: {
           age: this.props.userAge
         },
-        propDeps: ['userAge']
+        propDeps: ['userAge'],
+        defaultValue: []
       }
     };
   },
@@ -76,10 +77,23 @@ var MyComponent = React.createClass({
 });
 ```
 
+*Array and Object values not yet supported.
+
 ## Install
 
 ```
 npm install react-cloud-code-mixin
+```
+
+Then, in your React project:
+
+```javascript
+var ParseCCMixin = require('react-cloud-code-mixin');
+```
+
+Or, if you're using ES6/ECMA2015 syntax:
+```javascript
+import ParseCCMixin from 'react-cloud-code-mixin'
 ```
 
 ## Depencies
