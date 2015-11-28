@@ -1,6 +1,6 @@
 {
   "name": "react-cloud-code-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/index",
   "description": "A Parse Cloud Code mixin for React.js, inspired by the ParseReact Mixin.",
   "dependencies": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/eiriklv/react-masonry-mixin.git"
+    "url": "git://github.com/rubencodes/react-cloud-code-mixin.git"
   },
   "keywords": [
     "react",
