@@ -1,0 +1,29 @@
+{
+  "name": "react-cloud-code-mixin",
+  "version": "1.0.0",
+  "main": "./lib/index",
+  "description": "A Parse Cloud Code mixin for React.js, inspired by the ParseReact Mixin.",
+  "dependencies": {
+    "parse": "^1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eiriklv/react-masonry-mixin.git"
+  },
+  "keywords": [
+    "react",
+    "mixin",
+    "parse",
+    "cloud code"
+  ],
+  "author": "Ruben Martinez Jr. <ruben.martinez93@gmail.com> (http://www.ruben.codes/)",
+  "bugs": {
+    "url": "https://github.com/rubencodes/react-cloud-code-mixin/issues"
+  },
+  "homepage": "https://github.com/rubencodes/react-cloud-code-mixin",
+  "license": "MIT"
+}
