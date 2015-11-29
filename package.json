@@ -1,6 +1,6 @@
 {
   "name": "react-cloud-code-mixin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./lib/index",
   "description": "A Parse Cloud Code mixin for React.js, inspired by the ParseReact Mixin.",
   "dependencies": {
