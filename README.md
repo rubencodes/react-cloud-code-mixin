@@ -81,13 +81,11 @@ var MyComponent = React.createClass({
 
 ## Additional Component Methods
 ###`this.pendingQueries()` 
-Returns an array containing the names of queries that are currently waiting for results.
+Returns an array containing the names of calls that are currently waiting for results.
 ###`this.queryErrors()` 
-Returns a map of query names to the error they encountered on the last request, if there was one.
-###`this.reloadData()` 
-Forces a full refresh of all cloud code calls. 
-
-**Coming Soon**: Will optionally take an array of function names as a param and reload only those functions.
+Returns a map of call names to the error they encountered on the last request, if there was one.
+###`this.reloadData([callList])` 
+Forces a refresh of Cloud Code calls with names in the `callList`, if provided, else refreshes data from all the calls. Note: the names in the `callList` should be the name of the data key in which the data is stored (e.g. the key part of the key-value pairs returned in `loadData`.
 
 ## Install
 
