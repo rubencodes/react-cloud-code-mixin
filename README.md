@@ -77,7 +77,11 @@ var MyComponent = React.createClass({
 });
 ```
 
-*Array and Object values not yet supported.
+In the example, the `getUsers` Cloud Code function is called with the parameter `age` set to `this.props.userAge`, and data is stored in `this.data.Users` (whose initial value was `[]`). Our `propDeps` specify that any time that `this.props.userAge` changes, the data is pulled again from the server and the component is reloaded.
+
+The `propDeps` and `stateDeps` declarations are the biggest departure from the ParseReact mixin; ParseReact reloads in response to any prop or state change. To get this behavior, simply omit the `propDeps` and `statedDeps` keys. This will force a reload with any prop or state change. If you don't want to ever reload data in response to props or state, this can also be specified by defining `propDeps` and `stateDeps` to be empty arrays.
+
+*Array and Object values not yet supported for `propDeps` and `stateDeps` 
 
 ## Additional Component Methods
 ###`this.pendingQueries()` 
