@@ -81,19 +81,19 @@ In the example, the `getUsers` Cloud Code function is called with the parameter 
 
 The `propDeps` and `stateDeps` declarations are the biggest departure from the ParseReact mixin; ParseReact reloads in response to any prop or state change. To get this behavior, simply omit the `propDeps` and `statedDeps` keys. This will force a reload with any prop or state change. If you don't want to ever reload data in response to props or state, this can also be specified by defining `propDeps` and `stateDeps` to be empty arrays.
 
-*Array and Object values not yet supported for `propDeps` and `stateDeps` 
+*Array and Object values not yet supported for `propDeps` and `stateDeps`
 
 ## Additional Component Methods
-###`this.pendingQueries()` 
+###`this.pendingQueries()`
 Returns an array containing the names of calls that are currently waiting for results.
-###`this.queryErrors()` 
+###`this.queryErrors()`
 Returns a map of call names to the error they encountered on the last request, if there was one.
-###`this.reloadData([callList])` 
+###`this.reloadData([callList])`
 Forces a refresh of Cloud Code calls with names in the `callList`, if provided, else refreshes data from all the calls. Note: the names in the `callList` should be the name of the data key in which the data is stored (e.g. the key part of the key-value pairs returned in `loadData`.
 
 ## Install
 
-```
+```bash
 npm install react-cloud-code-mixin
 ```
 
@@ -106,6 +106,11 @@ var ParseCCMixin = require('react-cloud-code-mixin');
 Or, if you're using ES6/ECMA2015 syntax:
 ```javascript
 import ParseCCMixin from 'react-cloud-code-mixin'
+```
+
+If you prefer to use a CDN, add the following to your main HTML file:
+```html
+<script src="https://npmcdn.com/react-cloud-code-mixin/dist/index.min.js" />
 ```
 
 ## Depencies
