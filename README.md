@@ -110,7 +110,7 @@ import ParseCCMixin from 'react-cloud-code-mixin'
 
 If you prefer to use a CDN, add the following to your main HTML file:
 ```html
-<script src="https://npmcdn.com/react-cloud-code-mixin/dist/index.min.js" />
+<script src="https://unpkg.com/react-cloud-code-mixin/dist/index.min.js" />
 ```
 
 ## Depencies
